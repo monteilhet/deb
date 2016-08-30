@@ -6,12 +6,15 @@
   ## list system package
   dpkg-query -l
   dpkg -l | less
-  
+
   ## list python package
   dpkg -l 'python*'
-  
+
   ## list installed package
   dpkg -l | grep '^.i'
+
+  ## list installed package
+  dpkg --get-selections | grep python
 
   ## list all installed packages with apt
   apt --installed list
