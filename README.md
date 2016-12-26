@@ -56,6 +56,7 @@
   ## package files list
   dpkg --listfiles xen-tools
   dpkg -L xen-tools
+  apt-file show xen-tools
 
   ## find the installed package that provides the specified file
   dpkg -S /etc/nanorc
