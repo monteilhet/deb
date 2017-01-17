@@ -3,17 +3,17 @@
 ## List package
 
 ```bash
-  ## list system package
+  ## list system packages
   dpkg-query -l
   dpkg -l | less
 
-  ## list python package
+  ## list python packages
   dpkg -l 'python*'
 
-  ## list installed package
+  ## list installed packages
   dpkg -l | grep '^.i'
 
-  ## list installed package
+  ## list python packages
   dpkg --get-selections | grep python
 
   ## list all installed packages with apt
@@ -39,8 +39,8 @@
   ## show packet reverse dependences
   apt-cache rdepends build-essential
 
-  ## show packet detail
-  apt-cache show python-lxml
+  ## displays information about package (available versions and reverse dependencies)
+  apt-cache showpkg python-lxml
 
 ```
 
