@@ -27,6 +27,9 @@
 ## Packages in apt cache
 
 ```bash
+  ## update cache
+  apt-get update
+
   ## find packet containing token
   apt-cache search lxml
 
@@ -42,6 +45,15 @@
   ## displays information about package (available versions and reverse dependencies)
   apt-cache showpkg python-lxml
 
+  ## update cache for apt-file
+  apt-file update
+
+  ## package files list
+  apt-file show xen-tools
+
+  ## find the package that provides the specified file
+  apt-file search /usr/bin/htpasswd
+
 ```
 
 ## Details on installed package
@@ -56,12 +68,11 @@
   ## package files list
   dpkg --listfiles xen-tools
   dpkg -L xen-tools
-  apt-file show xen-tools
 
   ## find the installed package that provides the specified file
   dpkg -S /etc/nanorc
-  dlocate /etc/nanorc
-  apt-file search foo
+  locate /etc/nanorc
+  
 
 ```
 
