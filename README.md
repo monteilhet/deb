@@ -76,6 +76,12 @@
   dpkg -S /etc/nanorc
   locate /etc/nanorc
   
+```
+## Download
+
+```bash
+
+  ## download .deb package without installing it
+  aptitude download ripole
 
 ```
-
