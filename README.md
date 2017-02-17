@@ -32,7 +32,10 @@
 
   ## find packet containing token
   apt-cache search lxml
-
+  
+  ##  find packet containing token only in the package name
+  apt-cache search lxml --names-only
+  
   ## show packet detail
   apt-cache show python-lxml
 
