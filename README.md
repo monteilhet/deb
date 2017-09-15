@@ -80,6 +80,17 @@
   locate /etc/nanorc
   
 ```
+
+## Policy
+
+```bash
+
+  ## show policy for the specified packet
+  apt-cache policy mono-complete
+
+```
+
+
 ## Download
 
 ```bash
