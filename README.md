@@ -19,6 +19,9 @@
   ## list all installed packages with apt
   apt --installed list
 
+  ## list packages upgradable
+  apt --upgradable list
+
   ## apt-show-versions tool (=>apt-get install apt-show-versions)
   apt-show-versions -r "python*"
 
